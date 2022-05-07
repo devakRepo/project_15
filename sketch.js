@@ -49,6 +49,9 @@ function draw() {
   edges= createEdgeSprites();
   boy.collide(edges);
   
+  if(swordGroup.isTouching(boy)) {
+    gameState=END;
+  }
   //code to reset the background
   if(path.y > 400 ){
     path.y = height/2;
@@ -72,8 +75,7 @@ function draw() {
       treasureCollection= treasureCollection + 150;
       
     }else{
-      if(swordGroup.isTouching(boy)) {
-        gameState=END;
+
         boy.addAnimation("SahilRunning",endImg);
 
         boy.x=200;
