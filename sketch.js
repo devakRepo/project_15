@@ -101,8 +101,6 @@ function draw() {
   text("Treasure: "+ treasureCollection,10,30);
   }
 
-}
-
 function createCash() {
   if (World.frameCount % 200 == 0) {
   var cash = createSprite(Math.round(random(50, 350),40, 10, 10));
