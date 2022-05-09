@@ -73,7 +73,7 @@ function draw() {
     }else if(jewelryG.isTouching(boy)) {
       jewelryG.destroyEach();
       treasureCollection= treasureCollection + 150;
-      
+    }
     }else{
 
         boy.addAnimation("SahilRunning",endImg);
@@ -93,7 +93,7 @@ function draw() {
         swordGroup.setVelocityYEach(0);
      
     }
-  }
+  
   
   drawSprites();
   textSize(20);
